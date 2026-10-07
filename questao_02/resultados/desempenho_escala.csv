@@ -1,0 +1,21 @@
+entrada,n_skus,estados_dp (sum T*(S+1)),algoritmo,tempo_s,memoria_mb
+pequena,8,18696,Monte Carlo (2000),0.16552,19.288
+pequena,8,18696,DP,0.02002,0.434
+pequena,8,18696,Greedy,0.01672,0.078
+pequena,8,18696,MC validação (5000),0.06999,6.807
+média,16,36204,Monte Carlo (2000),0.33147,38.574
+média,16,36204,DP,0.04008,0.597
+média,16,36204,Greedy,0.0305,0.127
+média,16,36204,MC validação (5000),0.13027,12.873
+grande,24,55116,Monte Carlo (2000),0.50137,57.862
+grande,24,55116,DP,0.05971,0.846
+grande,24,55116,Greedy,0.0439,0.186
+grande,24,55116,MC validação (5000),0.19949,18.938
+grande x2 estoque,24,109944,Monte Carlo (2000),0.50347,57.862
+grande x2 estoque,24,109944,DP,0.0907,1.677
+grande x2 estoque,24,109944,Greedy,0.04811,0.178
+grande x2 estoque,24,109944,MC validação (5000),0.19438,18.938
+grande x4 estoque,24,219600,Monte Carlo (2000),0.50182,57.862
+grande x4 estoque,24,219600,DP,0.14452,3.341
+grande x4 estoque,24,219600,Greedy,0.04403,0.172
+grande x4 estoque,24,219600,MC validação (5000),0.20046,18.938

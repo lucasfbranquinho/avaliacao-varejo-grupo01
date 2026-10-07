@@ -1,0 +1,2 @@
+trecho,antes,depois,tempo_antes_s,tempo_depois_s,memoria_antes_kb,memoria_depois_kb,speedup,subproblemas_reusados(hits),subproblemas_distintos(misses)
+"DP do SKU Q2-017 (S=513, T=12, K=7, B=10)",Top-Down recursivo + lru_cache (Python puro),Bottom-Up vetorizado em s (NumPy),0.21896,0.00448,628.9,265.8,48.9,281751,5194

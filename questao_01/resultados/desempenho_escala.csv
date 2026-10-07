@@ -1,0 +1,14 @@
+algoritmo,n_skus,tamanho,unidade_tamanho,tempo_s,memoria_kb
+Brute Force,4,980,combinações,0.00054,285.3
+Brute Force,5,3920,combinações,0.00233,1409.9
+Brute Force,6,15680,combinações,0.0144,6616.2
+Brute Force,7,78400,combinações,0.08139,37976.3
+Brute Force,8,548800,combinações,0.70395,110939.4
+GA (config A),8,7156,avaliações (72 gerações),0.02272,95.4
+Greedy,8,32,degraus (n*J),0.00135,24.1
+GA (config A),15,7646,avaliações (77 gerações),0.0272,162.1
+Greedy,15,60,degraus (n*J),0.00115,27.7
+GA (config A),22,8920,avaliações (90 gerações),0.03803,229.3
+Greedy,22,88,degraus (n*J),0.00118,29.4
+GA (config A),44,9998,avaliações (101 gerações),0.06234,437.2
+Greedy,44,176,degraus (n*J),0.00128,38.3

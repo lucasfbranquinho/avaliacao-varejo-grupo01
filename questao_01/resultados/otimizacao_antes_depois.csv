@@ -1,0 +1,3 @@
+trecho,antes,depois,tempo_antes_s,tempo_depois_s,memoria_antes_kb,memoria_depois_kb,speedup
+Brute Force 6 SKUs (15.680 comb.),itertools + laço Python,lotes NumPy (unravel_index),0.19649,0.01479,1.42969,6616.19531,13.3
+"Fitness de 1 geração do GA (P=100, n=22)",laço Python por indivíduo,matriz P x n + one-hot de categorias,0.00857,0.00035,4.25781,110.23438,24.4
