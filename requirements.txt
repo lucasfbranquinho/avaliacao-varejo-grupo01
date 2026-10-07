@@ -1,0 +1,8 @@
+# Python 3.13.1 (testado em Windows 10)
+numpy==2.4.4
+pandas==3.0.2
+matplotlib==3.10.9
+pytest>=8.0
+# apenas para regenerar os dados com o notebook oficial
+nbconvert==7.17.1
+ipykernel==7.2.0
