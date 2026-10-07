@@ -161,14 +161,19 @@ def subinstancia(inst: InstanciaQ1, indices) -> InstanciaQ1:
 # BF e GA: O(P * n) operações (o produto pela one-hot custa O(P * n * n_cat)).
 # ---------------------------------------------------------------------------
 
-def vendas(inst: InstanciaQ1, niveis_idx: np.ndarray) -> np.ndarray:
+def demanda(inst: InstanciaQ1, niveis_idx: np.ndarray) -> np.ndarray:
+    """Demanda de 90 dias SEM o limite de estoque (P x n)."""
     m = inst.niveis[niveis_idx]                                   # (P, n)
     soma_cat = m @ inst.onehot_cat                                # (P, n_cat)
     media_cat = (soma_cat / inst.tam_cat) @ inst.onehot_cat.T     # (P, n)
     eps = np.where(m > 1.0, inst.elasticidade * inst.params.assimetria_aumento, inst.elasticidade)
     d = (inst.demanda_base * m ** (-eps)
          * (m / media_cat) ** (-inst.params.gama_canibalizacao))
-    return np.minimum(inst.estoque, np.floor(d))
+    return d
+
+
+def vendas(inst: InstanciaQ1, niveis_idx: np.ndarray) -> np.ndarray:
+    return np.minimum(inst.estoque, np.floor(demanda(inst, niveis_idx)))
 
 
 def avaliar(inst: InstanciaQ1, niveis_idx: np.ndarray) -> dict:
