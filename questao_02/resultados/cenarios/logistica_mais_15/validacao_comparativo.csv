@@ -1,0 +1,4 @@
+politica,P(pagar sem 4),P(pagar sem 8),P(pagar sem 12),P(pagar as 3),risco_falha,caixa_final_medio,caixa_final_P5,CVaR5,caixa_gerado_medio,receita_media,margem_contrib_pct,estoque_final_unid,estoque_final_valor_custo,gasto_destaques
+preço fixo 1.00,1.0,1.0,1.0,1.0,0.0,57003.89,41988.69,37876.46,399663.15,2180105.59,18.33,656.2,439023.83,0.0
+DP sem destaques,1.0,1.0,1.0,1.0,0.0,196403.14,175832.1,169451.8,539062.4,2067508.99,26.07,725.8,648184.22,0.0
+DP + Greedy (plano final),1.0,1.0,1.0,1.0,0.0,205200.25,186688.59,180537.95,547859.51,2147119.25,25.52,687.4,606415.63,17777.59

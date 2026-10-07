@@ -1,0 +1,5 @@
+config,seed,fitness,geracoes,avaliacoes,tempo_s,memoria_kb
+"A (P=100, torneio 3, uniforme, pm=1/n, elite 2)",1002,401769.58,90,8920,0.0424,229.3
+"A (P=100, torneio 3, uniforme, pm=1/n, elite 2)",1003,401769.58,103,10194,0.0473,229.7
+"B (P=30, torneio 2, um ponto, pm=0.10, elite 1)",1002,401709.75,255,7425,0.08,81.1
+"B (P=30, torneio 2, um ponto, pm=0.10, elite 1)",1003,401769.58,290,8440,0.0911,82.4

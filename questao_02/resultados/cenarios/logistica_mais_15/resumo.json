@@ -1,0 +1,73 @@
+{
+  "grupo": "G01",
+  "seed_construcao": 1002,
+  "seed_validacao": 8779,
+  "cenarios_construcao": 2000,
+  "cenarios_validacao": 5000,
+  "cenario": {
+    "concorrente_mult": 1.0,
+    "logistica_mult": 1.15,
+    "orcamento_mult": 1.0,
+    "dividas_mult": 1.0,
+    "demanda_mult": 1.0,
+    "remover_sku": []
+  },
+  "alpha_calibrado": 0.25,
+  "plano_final": {
+    "politica": "DP + Greedy (plano final)",
+    "P(pagar sem 4)": 1.0,
+    "P(pagar sem 8)": 1.0,
+    "P(pagar sem 12)": 1.0,
+    "P(pagar as 3)": 1.0,
+    "risco_falha": 0.0,
+    "caixa_final_medio": 205200.25,
+    "caixa_final_P5": 186688.59,
+    "CVaR5": 180537.95,
+    "caixa_gerado_medio": 547859.51,
+    "receita_media": 2147119.25,
+    "margem_contrib_pct": 25.52,
+    "estoque_final_unid": 687.4,
+    "estoque_final_valor_custo": 606415.63,
+    "gasto_destaques": 17777.59
+  },
+  "risco_dentro_do_limite": true,
+  "skus_pausados_todo_horizonte": [
+    "Q2-011",
+    "Q2-013"
+  ],
+  "destaques_total": 72,
+  "multiplicador_divida_suportavel": {
+    "preço fixo": 1.12,
+    "DP": 1.495,
+    "DP + Greedy": 1.525
+  },
+  "analise_falhas": {
+    "falhas_no_cenario_base": 0,
+    "n_cenarios": 5000,
+    "dividas_mult_analisado": 1.5,
+    "cenarios_com_falha": 118,
+    "semana_da_primeira_falha": {
+      "4": 0,
+      "8": 0,
+      "12": 118
+    },
+    "choque_demanda_medio_falha": 0.9328,
+    "choque_demanda_medio_sucesso": 1.0017,
+    "logistica_rel_media_falha": 1.035,
+    "logistica_rel_media_sucesso": 0.9998,
+    "concorrente_rel_medio_falha": 0.9956,
+    "concorrente_rel_medio_sucesso": 1.0033
+  },
+  "tempos_s": {
+    "monte_carlo_construcao": 0.5187,
+    "dp": 0.0598,
+    "greedy": 0.0464,
+    "monte_carlo_validacao": 0.1995
+  },
+  "memoria_pico_mb": {
+    "monte_carlo_construcao": 57.86,
+    "dp": 0.85,
+    "greedy": 0.17,
+    "monte_carlo_validacao": 18.94
+  }
+}

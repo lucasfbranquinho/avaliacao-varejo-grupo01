@@ -1,0 +1,3 @@
+config,fitness_medio,fitness_desvio,fitness_max,geracoes,tempo_s,memoria_kb
+"A (P=100, torneio 3, uniforme, pm=1/n, elite 2)",323625.58,131.46,323718.54,81.0,0.04,219.7
+"B (P=30, torneio 2, um ponto, pm=0.10, elite 1)",323527.43,185.67,323658.72,181.0,0.06,75.35

@@ -37,9 +37,9 @@
   ],
   "destaques_total": 72,
   "multiplicador_divida_suportavel": {
-    "preço fixo": 1.1699999999999964,
-    "DP": 1.5299999999999887,
-    "DP + Greedy": 1.5549999999999882
+    "preço fixo": 1.17,
+    "DP": 1.53,
+    "DP + Greedy": 1.555
   },
   "analise_falhas": {
     "falhas_no_cenario_base": 0,
@@ -59,10 +59,10 @@
     "concorrente_rel_medio_sucesso": 1.0036
   },
   "tempos_s": {
-    "monte_carlo_construcao": 0.4962,
-    "dp": 0.0574,
-    "greedy": 0.0437,
-    "monte_carlo_validacao": 0.2054
+    "monte_carlo_construcao": 0.4951,
+    "dp": 0.0599,
+    "greedy": 0.0467,
+    "monte_carlo_validacao": 0.2023
   },
   "memoria_pico_mb": {
     "monte_carlo_construcao": 57.86,

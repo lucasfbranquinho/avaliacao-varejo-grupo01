@@ -172,10 +172,13 @@ def executar(args) -> dict:
     df_est = pd.DataFrame(estresse)
     df_est.to_csv(args.saida / "estresse_dividas.csv", index=False)
     grade = np.arange(1.0, 2.0, 0.005)
-    suport = {nome: float(max([m for m in grade if prob_com_mult(r, m)[1] >= 1 - inst.limite_risco] or [np.nan]))
-              for nome, r in [("preço fixo", r_fixo), ("DP", r_dp), ("DP + Greedy", r_final)]}
-    print("\nEstresse: multiplicador máximo da dívida com risco <= "
-          f"{inst.limite_risco:.0%}: " + ", ".join(f"{k}: x{v:.3f}" for k, v in suport.items()))
+    suport = {}
+    for nome, r in [("preço fixo", r_fixo), ("DP", r_dp), ("DP + Greedy", r_final)]:
+        ok = [m for m in grade if prob_com_mult(r, m)[1] >= 1 - inst.limite_risco]
+        suport[nome] = round(float(max(ok)), 3) if ok else None     # None: risco já excede o limite em x1.0
+    print("\nEstresse: multiplicador máximo da dívida (sobre a dívida do cenário) com risco <= "
+          f"{inst.limite_risco:.0%}: " + ", ".join(f"{k}: " + (f"x{v:.3f}" if v else "nenhum (< x1.0)")
+                                                    for k, v in suport.items()))
 
     # cenários de falha: no plano base e no primeiro nível de estresse em que aparecem
     falhas_base = int((~r_final.pago.all(axis=1)).sum())

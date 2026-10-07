@@ -1,0 +1,74 @@
+{
+  "grupo": "G01",
+  "seed": 1002,
+  "skus_ativos": 22,
+  "skus_suspensos": [
+    "Q1-005",
+    "Q1-009",
+    "Q1-010",
+    "Q1-014",
+    "Q1-021",
+    "Q1-023",
+    "Q1-024",
+    "Q1-026"
+  ],
+  "cenario": {
+    "meta_mult": 1.0,
+    "logistica_mult": 1.0,
+    "orcamento_mult": 1.0,
+    "remover_sku": [],
+    "margem_minima": 0.0872,
+    "ga_config_A": "A* (P=40, pm=0.05, G=300)"
+  },
+  "brute_force": {
+    "n_skus": 8,
+    "skus": [
+      "Q1-003",
+      "Q1-006",
+      "Q1-013",
+      "Q1-016",
+      "Q1-017",
+      "Q1-018",
+      "Q1-022",
+      "Q1-028"
+    ],
+    "combinacoes": 548800,
+    "otimo": 299303.47,
+    "tempo_s": 0.6686,
+    "gap_medio_pct": {
+      "A* (P=40, pm=0.05, G=300)": 0.0,
+      "B (P=30, torneio 2, um ponto, pm=0.10, elite 1)": 0.0
+    }
+  },
+  "ga_melhor_config": "B (P=30, torneio 2, um ponto, pm=0.10, elite 1)",
+  "ga_fitness": 401769.58,
+  "caixa_politica_atual": 387103.9,
+  "caixa_apos_ga": 441981.34,
+  "caixa_final_apos_greedy": 483682.41,
+  "receita_bruta": 2127113.1,
+  "margem_contribuicao_pct": 22.74,
+  "meta_caixa": 316890.9,
+  "meta_atingida": true,
+  "folga_meta": 166791.51,
+  "divida_90d": 298427.33,
+  "cobertura_divida_pct": 162.08,
+  "orcamento_promocional": 110938.27,
+  "orcamento_usado": 110347.36,
+  "orcamento_usado_pct": 99.47,
+  "retorno_cupom_por_real": 0.378,
+  "caixa_liquido_se_verba_propria": 373335.06,
+  "estoque_inicial_unid": 3329,
+  "estoque_remanescente_unid": 773,
+  "estoque_remanescente_pct": 23.22,
+  "estoque_remanescente_valor_custo": 593960.0,
+  "skus_com_desconto": 0,
+  "limite_descontos": 8,
+  "tempos_s": {
+    "brute_force": 0.6686,
+    "greedy": 0.001463,
+    "ga_medio": {
+      "A* (P=40, pm=0.05, G=300)": 0.0292,
+      "B (P=30, torneio 2, um ponto, pm=0.10, elite 1)": 0.0765
+    }
+  }
+}
