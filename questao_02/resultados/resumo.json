@@ -59,10 +59,10 @@
     "concorrente_rel_medio_sucesso": 1.0036
   },
   "tempos_s": {
-    "monte_carlo_construcao": 0.4951,
-    "dp": 0.0599,
-    "greedy": 0.0467,
-    "monte_carlo_validacao": 0.2023
+    "monte_carlo_construcao": 0.4992,
+    "dp": 0.058,
+    "greedy": 0.0458,
+    "monte_carlo_validacao": 0.1953
   },
   "memoria_pico_mb": {
     "monte_carlo_construcao": 57.86,

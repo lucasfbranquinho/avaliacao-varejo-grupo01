@@ -34,7 +34,7 @@
     ],
     "combinacoes": 548800,
     "otimo": 299303.47,
-    "tempo_s": 0.6893,
+    "tempo_s": 0.6754,
     "gap_medio_pct": {
       "A (P=100, torneio 3, uniforme, pm=1/n, elite 2)": 0.0,
       "B (P=30, torneio 2, um ponto, pm=0.10, elite 1)": 0.0
@@ -64,11 +64,11 @@
   "skus_com_desconto": 0,
   "limite_descontos": 8,
   "tempos_s": {
-    "brute_force": 0.6893,
-    "greedy": 0.001477,
+    "brute_force": 0.6754,
+    "greedy": 0.002158,
     "ga_medio": {
-      "A (P=100, torneio 3, uniforme, pm=1/n, elite 2)": 0.0379,
-      "B (P=30, torneio 2, um ponto, pm=0.10, elite 1)": 0.0583
+      "A (P=100, torneio 3, uniforme, pm=1/n, elite 2)": 0.0413,
+      "B (P=30, torneio 2, um ponto, pm=0.10, elite 1)": 0.0674
     }
   }
 }
